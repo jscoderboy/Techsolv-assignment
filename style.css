@@ -1,0 +1,240 @@
+:root {
+  --secondary-color: rgb(41, 240, 41);
+  --warning-color: red;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(46, 46, 89);
+  color: #fff;
+}
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+}
+.py-48 {
+  padding: 48px 0;
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.main-nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-nav .navbar ul {
+  display: flex;
+  align-items: center;
+}
+.main-nav .navbar ul li {
+  padding: 0 20px;
+}
+.main-nav .navbar ul li a {
+  text-decoration: none;
+}
+/* Section-A */
+.section-A h2 {
+  font-size: 18px;
+}
+.section-A p,
+.section-b p {
+  margin: 20px 0;
+}
+.section-A .secondary-color {
+  color: var(--secondary-color);
+}
+.section-A .warrning-color {
+  color: var(--warning-color);
+}
+.market-chart {
+  margin-top: 48px;
+}
+.market-chart table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  text-align: left;
+  padding: 15px;
+}
+table td {
+  padding: 15px 10px;
+  color: #fff;
+}
+table .d-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+table td .coin-name {
+  margin: 0 10px;
+}
+table td .sub-name {
+  font-size: 14px;
+  color: #605e5e;
+}
+/* buttons */
+.btn-primary {
+  font-weight: bold;
+  padding: 12px 40px;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  background-color: rgb(41, 207, 244);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0;
+}
+/* Section-b */
+.section-b {
+  background-color: rgb(6, 6, 49);
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.section-b .plat-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px 0;
+}
+.section-b .d-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+}
+/* Section-c */
+.section-c .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.section-c .flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.section-c .d-flex {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 20px;
+  padding: 20px 0;
+}
+.section-c .d-flex i {
+  padding: 6px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.section-c .portfolio {
+  /* border: 1px solid red; */
+  /* flex-grow: 1; */
+}
+.section-c .portfolio-container {
+  padding: 30px;
+  border: 1px solid #f4f4f4;
+  border-radius: 20px;
+  padding: 10px 70px;
+  background-color: rgb(7, 7, 76);
+}
+.portfolio-data .d-flex {
+  gap: 10px;
+}
+.section-c .portfolio-data,
+.portfolio-data .price-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.section-c .portfolio-data img {
+  border-radius: 50%;
+}
+
+/* Footer */
+#footer {
+  margin-top: 48px;
+}
+#footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-gap: 1rem;
+}
+#footer img {
+  margin-bottom: 20px;
+}
+#footer ul li {
+  padding: 10px 0;
+}
+#footer ul li a {
+  text-decoration: none;
+}
+#footer .copyright {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  background-color: rgb(30, 73, 73);
+}
+/* Meida */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+  }
+  .main-nav i {
+    display: none;
+  }
+  .navbar {
+    margin-top: 20px;
+  }
+  .main-nav .navbar ul li {
+    padding: 0 10px;
+  }
+  .section-A {
+    padding: 24px 0;
+  }
+  .section-b .flex-container > div img {
+    display: none;
+  }
+  .section-c .flex-container {
+    flex-direction: column;
+  }
+  #footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-nav .navbar ul li {
+    padding: 0 2px;
+  }
+  .main-nav .navbar ul li a {
+    font-size: 14px;
+  }
+}

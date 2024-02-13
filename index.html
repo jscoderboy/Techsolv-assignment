@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignemnt</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav class="main-nav">
+          <div class="logo">
+            <img src="./images/logo.png" alt="logo" title="logo" />
+          </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="#">Cryptocurrencies</a></li>
+              <li><a href="#">Exchanges</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Trades</a></li>
+            </ul>
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="section-A py-48">
+      <div class="container">
+        <h2>Today's Cryptocurrency Prices By Market Cap</h2>
+        <p>
+          The global cryptocurrency market cap today is
+          <span class="secondary-color">$811.7B</span>, a
+          <span class="warrning-color"
+            ><i class="fa-solid fa-arrow-down"></i> 0.17%</span
+          >
+          decrease in the last 24 hours.
+        </p>
+        <!-- Chart -->
+        <div class="market-chart">
+          <table class="py-48">
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>24h Change</th>
+              <th>Chart</th>
+              <th>Marketcap</th>
+            </tr>
+            <tr>
+              <td class="d-flex">
+                <img src="./images/Bitcoin.jpg" alt="bitcoin" title="bitcoin" />
+                <span class="coin-name">Bitcoin</span
+                ><span class="sub-name">BTC</span>
+              </td>
+              <td><span>$3625.24</span></td>
+              <td><span class="secondary-color">+2.4%</span></td>
+              <td><img src="./images/green-chart.png" alt="green-chart" /></td>
+              <td>$320,893,271,955</td>
+            </tr>
+            <!-- row-2 -->
+            <tr>
+              <td class="d-flex">
+                <img
+                  src="./images/ethereum.png"
+                  alt="ethereum"
+                  title="ethereum"
+                />
+                <span class="coin-name">Ethereum</span
+                ><span class="sub-name">ETH</span>
+              </td>
+              <td><span>$1218.18</span></td>
+              <td><span class="warrning-color">-0.7%</span></td>
+              <td><img src="./images/red-chart.png" alt="red-chart" /></td>
+              <td>$148,563,792,762</td>
+            </tr>
+            <!-- row-3 -->
+            <tr>
+              <td class="d-flex">
+                <img
+                  src="./images/ethereum.png"
+                  alt="ethereum"
+                  title="ethereum"
+                />
+                <span class="coin-name">ShibuInu</span
+                ><span class="sub-name">Shibu</span>
+              </td>
+              <td><span>$0.001</span></td>
+              <td><span class="secondary-color">+1.2%</span></td>
+              <td><img src="./images/green-chart.png" alt="red-chart" /></td>
+              <td>$4,498,804,882</td>
+            </tr>
+            <!-- row-4 -->
+            <tr>
+              <td class="d-flex">
+                <img src="./images/Bitcoin.jpg" alt="bitcoin" title="bitcoin" />
+                <span class="coin-name">Bitcoin</span
+                ><span class="sub-name">BTC</span>
+              </td>
+              <td><span>$3625.24</span></td>
+              <td><span class="secondary-color">+2.4%</span></td>
+              <td><img src="./images/green-chart.png" alt="green-chart" /></td>
+              <td>$320,893,271,955</td>
+            </tr>
+            <!-- row-5 -->
+            <tr>
+              <td class="d-flex">
+                <img
+                  src="./images/ethereum.png"
+                  alt="ethereum"
+                  title="ethereum"
+                />
+                <span class="coin-name">ShibuInu</span
+                ><span class="sub-name">Shibu</span>
+              </td>
+              <td><span>$0.001</span></td>
+              <td><span class="secondary-color">+1.2%</span></td>
+              <td><img src="./images/green-chart.png" alt="red-chart" /></td>
+              <td>$4,498,804,882</td>
+            </tr>
+            <!-- Row-6 -->
+            <tr>
+              <td class="d-flex">
+                <img
+                  src="./images/ethereum.png"
+                  alt="ethereum"
+                  title="ethereum"
+                />
+                <span class="coin-name">ShibuInu</span
+                ><span class="sub-name">Shibu</span>
+              </td>
+              <td><span>$0.001</span></td>
+              <td><span class="secondary-color">+1.2%</span></td>
+              <td><img src="./images/green-chart.png" alt="red-chart" /></td>
+              <td>$4,498,804,882</td>
+            </tr>
+            <!-- row-7 -->
+            <tr>
+              <td class="d-flex">
+                <img src="./images/Bitcoin.jpg" alt="bitcoin" title="bitcoin" />
+                <span class="coin-name">Bitcoin</span
+                ><span class="sub-name">BTC</span>
+              </td>
+              <td><span>$3625.24</span></td>
+              <td><span class="secondary-color">+2.4%</span></td>
+              <td><img src="./images/green-chart.png" alt="green-chart" /></td>
+              <td>$320,893,271,955</td>
+            </tr>
+          </table>
+          <div class="btn">
+            <a href="#" class="btn-primary">View All</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-b -->
+    <section class="section-b py-48">
+      <div class="container">
+        <div class="flex-container">
+          <div>
+            <img src="./images/map.png" alt="map" title="map" />
+          </div>
+          <div>
+            <h2>We are the most trusted Cryptocurrency Platform</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <div class="plat-form">
+              <div class="d-flex">
+                <img
+                  src="./images/group-22.png"
+                  alt="group-22"
+                  title="group-22"
+                />
+                <div>
+                  <h3>Clarity</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc
+                    vulputate
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="./images/group-23.png"
+                  alt="group-23"
+                  title="group-23"
+                />
+                <div>
+                  <h3>Confidence</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc
+                    vulputate
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="./images/group-24.png"
+                  alt="group-24"
+                  title="group-24"
+                />
+                <div>
+                  <h3>Community</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc
+                    vulputate
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section-c -->
+    <section class="section-c py-48">
+      <div class="container">
+        <div class="flex-container">
+          <div class="flex-column">
+            <h2>Reason to invest in Cryptocurrency in 2022</h2>
+            <div class="d-flex">
+              <i class="fa-solid fa-check"></i>
+              <div>
+                <h3>Buying Bitcoin in legal</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-check"></i>
+              <div>
+                <h3>Buying Bitcoin in legal</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-check"></i>
+              <div>
+                <h3>Buying Bitcoin in legal</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio">
+            <div class="portfolio-container">
+              <h3>
+                Your portfolio is <span class="secondary-color">up 2.13%</span>
+              </h3>
+              <div class="portfolio-data">
+                <div class="d-flex">
+                  <img src="./images/Bitcoin.jpg" alt="bitcoin" />
+                  <div>
+                    <p>Bitcoin</p>
+                    <span>BTC</span>
+                  </div>
+                </div>
+                <div class="price-up">
+                  <p class="secondary-color">1.33%</p>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+              </div>
+              <div class="portfolio-data">
+                <div class="d-flex">
+                  <img src="./images/Bitcoin.jpg" alt="bitcoin" />
+                  <div>
+                    <p>Bitcoin</p>
+                    <span>BTC</span>
+                  </div>
+                </div>
+                <div class="price-up">
+                  <p class="secondary-color">1.33%</p>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="portfolio-data">
+                <div class="d-flex">
+                  <img src="./images/Bitcoin.jpg" alt="bitcoin" />
+                  <div>
+                    <p>Bitcoin</p>
+                    <span>BTC</span>
+                  </div>
+                </div>
+                <div class="price-up">
+                  <p class="secondary-color">1.33%</p>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="portfolio-data">
+                <div class="d-flex">
+                  <img src="./images/Bitcoin.jpg" alt="bitcoin" />
+                  <div>
+                    <p>Bitcoin</p>
+                    <span>BTC</span>
+                  </div>
+                </div>
+                <div class="price-up">
+                  <p class="secondary-color">1.33%</p>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="portfolio-data">
+                <div class="d-flex">
+                  <img src="./images/Bitcoin.jpg" alt="bitcoin" />
+                  <div>
+                    <p>Bitcoin</p>
+                    <span>BTC</span>
+                  </div>
+                </div>
+                <div class="price-up">
+                  <p class="secondary-color">1.33%</p>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-content">
+            <img src="./images/logo.png" alt="logo" />
+            <p class="lead">
+              CoinIntention's mission is to make investing in cryptocurrencies
+              easy and efficient. CoinIntention tracks various data of
+              cryptocurrencies and thus offers its users an overview of all
+              cryptocurrencies available on the market and their performance,
+              market capitalization, trading volume, etc.
+            </p>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul class="list">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Community Rules</a></li>
+              <li><a href="#">Community Rules</a></li>
+              <li><a href="#">Methodology</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul class="list">
+              <li><a href="#">Requested Form</a></li>
+              <li><a href="#">Contact Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQ’s</a></li>
+              <li><a href="#">Glossary</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Socials</h3>
+            <ul class="list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#"></a>Instagram</li>
+              <li><a href="#"></a>Twitter</li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2021-2023 CoinIntention. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
